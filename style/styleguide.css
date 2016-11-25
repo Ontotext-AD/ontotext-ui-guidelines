@@ -1,0 +1,115 @@
+body {
+    background-color: #e7e9ed;
+    padding-top: 40px;
+}
+h1 {
+    font: 400 40px/58px 'Rubik',sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 {
+    font: 400 34px/48px 'Rubik',sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3 {
+    font: 400 28px/40px 'Rubik',sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+h4 {
+    font: 400 22px/34px 'Rubik',sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+h5 {
+    font: 400 16px/28px 'Rubik',sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+p a {
+    color: #04355E;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0 1px 0 1px;
+    font-size: 14px;
+}
+p a:hover {
+    text-decoration: underline;
+    padding: 0 1px 0 1px;
+}
+hr {
+    border-top: 1px solid #cccccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn {
+    border-radius: 0;
+    background-image: none;
+    text-shadow: none;
+    background-repeat:none;
+    border:none;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.btn-default {
+    background-color: #979797;
+    color: #ffffff;
+}
+.btn-default:hover {
+    background-color: #6ba600;
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: #78b50a;
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #6ba600;
+    color: #ffffff;
+}
+.btn-danger {
+    background-color: #e3491a;
+    color: #ffffff;
+}
+.btn-danger:hover {
+    background-color: #d13b0d;
+    color: #ffffff;
+}
+.btn-group .btn+.btn {
+    margin-left: 1px;
+}
+
+/*NAVBAR CSS --------------------------------------*/
+.navbar {
+    border: none;
+    background-image: none;
+    box-shadow: none;
+    background-color: #ffffff;
+    height: 60px;
+    padding-top: 5px;
+    color: #363636;
+}
+.navbar-brand {
+    margin-top: -5px;
+}
+.navbar .navbar-text {
+    color: #363636;
+    font-size: 18px;
+}
+.navbar .fa {
+    color: #363636;
+}
+.navbar .fa:hover {
+    color: #ED4F2F;
+}
