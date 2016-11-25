@@ -1,0 +1,110 @@
+/*HOMEPAGE CSS --------------------------------------*/
+#section1 {
+    background-color: #ffffff;
+    height: 640px;
+    padding: 220px 10% 0 10%;
+}
+
+#section2 {
+    padding: 50px 0 40px 0;
+}
+.framework {
+    margin-bottom: 30px;
+}
+.bs-docs-booticon-outline {
+    background-color: transparent;
+    border: 1px solid #cdbfe3;
+}
+.bs-docs-booticon-lg {
+    width: 144px;
+    height: 144px;
+    font-size: 108px;
+    line-height: 140px;
+}
+.bs-docs-booticon {
+    display: block;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    cursor: default;
+    background-color: #563d7c;
+    border-radius: 15%;
+    margin:0 auto;
+}
+span#google-font {
+    display: block;
+    margin:0 auto;
+}
+
+#section3 {
+    background-color: #ffffff;
+    padding: 30px 2% 40px 2%;
+}
+
+#section4 {
+    background-color: none;
+    padding: 30px 2% 40px 2%;
+}
+#section4 hr {
+    width: 40%;
+}
+
+#section5 {
+    background-color: #ffffff;
+    padding: 30px 2% 40px 2%;
+}
+#section5 .color-sample {
+    margin: 0 auto 20px;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+#section6 {
+    background-color: none;
+    padding: 30px 2% 40px 2%;
+}
+#section6 hr {
+    width: 40%;
+}
+#section6 #button-samples .btn {
+    display: block;
+    margin: 0 auto;
+}
+#section6 #button-group-sample {
+    text-align: center;
+    margin: 20px auto;
+}
+#section6 #button-group-sample .btn {
+    text-align: center;
+    margin: 0 auto;
+}
+#section6 #button-group-sample .btn-group .btn+.btn {
+    margin-left: 1px;
+}
+
+
+#section7 {
+    background-color: #ffffff;
+    padding: 30px 2% 40px 2%;
+    text-align: center;
+}
+#section7 .page-link {
+    margin-bottom: 40px;
+}
+#section7 .fa {
+    color: #6ba600;
+    margin: 0 auto 15px;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+}
+
+#section8 {
+    background-color: none;
+    padding: 30px 2% 40px 2%;
+}
+#section8 .fa {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
