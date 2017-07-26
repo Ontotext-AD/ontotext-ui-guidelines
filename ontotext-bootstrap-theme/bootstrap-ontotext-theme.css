@@ -79,6 +79,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-exclamation:before {
+  content: "\e955";
+}
+.icon-tick:before {
+  content: "\e956";
+}
 .icon-hbars:before {
   content: "\e953";
 }
