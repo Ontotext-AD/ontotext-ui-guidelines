@@ -1,207 +1,306 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Ontotext UI Guidelines</title>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ontotext Style Guide &amp; Design Template</title>
+		<link rel="stylesheet" href="ontotext-bootstrap-theme/bootstrap.min.css">
+		<link rel="stylesheet" href="ontotext-bootstrap-theme/bootstrap-ontotext-theme.css">
+	</head>
+	<body class="p-3">
+    <h1>Ontotext UI Guidelines</h1>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="style/styleguide.css">
-    <link rel="stylesheet" href="style/style-home.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,500,500i,700" rel="stylesheet">
-  </head>
-
- <body>
-     <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container-fluid">
-             <div class="navbar-header">
-                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="#">
-                     <img alt="Ontotext" src="img/logo.png">
-                 </a>
-             </div>
-             <!-- Collect the nav links, forms, and other content for toggling -->
-             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                 <ul class="nav navbar-nav pull-right social-links">
-                     <li> <a ng-href="https://www.facebook.com/Ontotext" target="_blank" href="https://www.facebook.com/Ontotext">
-                         <i class="fa fa-facebook fa-lg"></i></a></li>
-                      <li> <a ng-href="https://twitter.com/ontotext" target="_blank" href="https://twitter.com/ontotext"><i class="fa fa-twitter fa-lg"></i></a> </li>
-                      <li> <a ng-href="https://www.linkedin.com/company/ontotext-ad" target="_blank" href="https://www.linkedin.com/company/ontotext-ad"><i class="fa fa-linkedin fa-lg"></i></a> </li>
-                      <li> <a ng-href="mailto:info@ontotext.com" target="_blank" class="email" href="mailto:info@ontotext.com"> <i class="fa fa-envelope fa-lg"></i> </a> </li>
-                  </ul>
-             </div><!-- /.navbar-collapse -->
-         </div><!-- /.container-fluid -->
-     </nav>
-
-     <div id="section1">
-         <div class="container-fluid">
-             <h1>The Ontotext Design Style Guide &amp; Template Library</h1>
-         </div>
-     </div>
-
-    <div id="section3">
-        <div class="container-fluid">
-             <h2>Frameworks</h2>
-             <br /><br />
-             <div class="row">
-                 <div class="framework col-xs-12 col-sm-4">
-                     <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">B</span>
-                     <br />
-                     <p>We use <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> for easy deployment of templated page content in a responsive layout. Please review <a href="http://getbootstrap.com/" target="_blank">the documentation</a> thoroughly to familiarize yourself with the affordances of Bootstrap.</p>
-                 </div>
-                 <div class="framework col-xs-12 col-sm-4">
-                     <img src="img/Google-Fonts-Logo.png" width="144px;" class="center-block"></img>
-                     <br />
-                     <p>We use <a href="https://www.google.com/fonts" target="_blank">Google Webfonts</a> for typography. See the <i>Fonts &amp; Typography</i> section below for a specific outline of the use cases for each of our font styles &amp; weights. Our primary font is called <a href="https://www.google.com/fonts#ChoosePlace:select/Collection:Rubik" target="_blank">Rubik</a>.</p>
-                 </div>
-                 <div class="framework col-xs-12 col-sm-4">
-                     <img src="img/font-awesome.jpg" width="144px;" class="center-block"></img>
-                     <br />
-                     <p>We use <a href="http://fontawesome.io/" target="_blank">Font Awesome</a> for CSS-accessible iconography. Much like Bootstrap and Google Webfonts, glyphs from Font Awesome can be hosted remotely and styled via HTML &amp; CSS.</p>
-                 </div>
-             </div>
-         </div>
+    <div class="card">
+      <div class="card-header">
+        Examples
+      </div>
+      <div class="card-block">
+        <ul class="mb-0">
+          <li><a href="examples/graphdb-dashboard/index.html" target="_blank">GraphDB dashboard</a></li>
+          <li><a href="examples/rdf-mapping/rdf-mapping.html" target="_blank">GraphDB RDF tool</a></li>
+        </ul>
+      </div>
     </div>
 
-     <div id="section6">
-         <div class="container-fluid">
-             <h2>Fonts &amp; Typography</h2>
-             <hr />
-             <h1>This is an h1 heading/title.</h1>
-             <p class="text-center"><i><strong>h1:</strong> Rubik. 400 weight. 40px with 52px line height.<br />Use an h1 for primary titles at the top of key pages (like this one).</i></p>
-             <hr />
-             <h2>This is an h2 heading.</h2>
-             <p class="text-center"><i><strong>h2:</strong> Rubik. 400 weight. 32px with 44px line height.<br />Use h2 headings for key section titles/subheads (like "Fonts &amp; Typography" above).</i></p>
-             <hr />
-             <h3>This is an h3 heading.</h3>
-             <p class="text-center"><i><strong>h3:</strong> Rubik. 400 weight. 28px with 38px line height.</i></p>
-             <hr />
-             <h4>This is an h4 heading.</h4>
-             <p class="text-center"><i><strong>h4:</strong> Rubik. 400 weight. 24px with 32px line height.<br />Use h4 headings for subsection titles.</i></p>
-             <hr />
-             <h5>This is an h5 heading.</h5>
-             <p class="text-center"><i><strong>h5:</strong> Rubik. 400 weight. 20px with 26px line height.</i></p>
-             <hr />
-            <p class="text-center">This is paragraph type.<br /><br />
-            <i><strong>p:</strong> Rubik. 300 weight. 16px with 30px line height.</i></p>
-            <hr />
-           <p class="text-center"><a href="#">This is text link.</a><br /><br />
-           <i><strong>a:</strong> Rubik. 300 weight. 16px with 30px line height.</i></p>
-         </div>
-     </div>
-
-     <div id="section7">
-         <div class="container-fluid">
-         <h2>Colors &amp; Pairings</h2>
-         <br />
-             <div class="row">
-                 <div class="col-xs-12 col-sm-4">
-                     <h5>Text Color</h5>
-                     <div class="color-sample">
-                         <span style="width:200px; height:100px; background-color:#363636; display:inline-block;"></span>
-                         <p>#363636</p>
-                     </div>
-                 </div>
-                 <div class="col-xs-12 col-sm-4">
-                     <h5>Primary Accent Pair</h5>
-                     <div class="color-sample">
-                         <span style="width:100px; height:100px; background-color:#6ba600; display:inline-block;"></span><span style="width:100px; height:100px; background-color:#78b50a; display:inline-block;"></span>
-                         <p>#6ba600   |   #78b50a</p>
-                     </div>
-                 </div>
-                 <div class="col-xs-12 col-sm-4">
-                     <h5>Negative Action Pair</h5>
-                     <div class="color-sample">
-                         <span style="width:100px; height:100px; background-color:#d13b0d; display:inline-block;"></span><span style="width:100px; height:100px; background-color:#e3491a; display:inline-block;"></span>
-                         <p>#d13b0d   |   #e3491a</p>
-                     </div>
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="col-xs-12 col-sm-4">
-                     <h5>Tertiary Color</h5>
-                     <div class="color-sample">
-                         <span style="width:100px; height:100px; background-color:#e8c82d; display:inline-block;"></span><span style="width:100px; height:100px; background-color:#f4d037; display:inline-block;"></span>
-                         <p>#e8c82d   |   #f4d037</p>
-                     </div>
-                 </div>
-                 <div class="col-xs-12 col-sm-4">
-                     <h5>Tertiary Color</h5>
-                     <div class="color-sample">
-                         <span style="width:100px; height:100px; background-color:#ef8818; display:inline-block;"></span><span style="width:100px; height:100px; background-color:#f7932f; display:inline-block;"></span>
-                         <p>#ef8818   |   #f7932f</p>
-                     </div>
-                 </div>
-                 <div class="col-xs-12 col-sm-4">
-                     <h5>Tertiary Color</h5>
-                     <div class="color-sample">
-                         <span style="width:100px; height:100px; background-color:#2baae5; display:inline-block;"></span><span style="width:100px; height:100px; background-color:#19bcf4; display:inline-block;"></span>
-                         <p>#2baae5   |   #19bcf4</p>
-                     </div>
-                 </div>
-             </div>
-        </div>
-     </div>
-
-          <div id="section6">
-              <div class="container-fluid">
-                <h2>Button Styles</h2>
-                <br />
-                  <div class="row" id="button-samples">
-                      <div class="col-xs-12 col-sm-4">
-                          <h5>Default button</h5>
-                          <button class="btn btn-default" type="submit">Default Button Style</button>
-                          <br />
-                      </div>
-                      <div class="col-xs-12 col-sm-4">
-                          <h5>Primary action button</h5>
-                          <button type="button" class="btn btn-primary">Primary Action Button</button>
-                          <br />
-                      </div>
-                      <div class="col-xs-12 col-sm-4">
-                          <h5>Negative action button</h5>
-                          <button type="button" class="btn btn-danger">Negative Action Button</button>
-                          <br />
-                      </div>
-                </div>
-                <br />
-                <h4>Button Groups</h4>
-                <div id="button-group-sample">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">Left</button>
-                        <button type="button" class="btn btn-default">Middle 1</button>
-                        <button type="button" class="btn btn-default">Middle 2</button>
-                        <button type="button" class="btn btn-default">Right</button>
-                    </div>
-                    <br />
-                </div>
-             </div>
-          </div>
-
-            <div id="section7">
-                <div class="container-fluid">
-                    <h2>Additional Page Styles</h2>
-               </div>
-            </div>
-
-            </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
 
 
+
+    <div class="card">
+      <div class="card-header">
+        Typography
+      </div>
+      <div class="card-block">
+
+    		<h1>Heading 1</h1>
+    		<h2>Heading 2</h2>
+    		<h3>Heading 3</h3>
+    		<h4>Heading 4</h4>
+    		<h5>Heading 5</h5>
+    		<h6>Heading 6</h6>
+        <br><br>
+    		<p class="lead">
+    		  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+    		</p>
+    		<p>Lorem ipsum dolor sit amet, velit pertinacia pri ne, viris noster duo no. Nec cu cibo nihil animal, erant qualisque mediocritatem vix cu. <a href="#">Accusamus persequeris</a> eam an. Apeirian sententiae mediocritatem eam eu, est mazim consulatu te. Solet periculis accommodare usu id, cetero meliore docendi sed ne, qui ceteros incorrupte te.
+    		</p>
+
+
+
+
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        Buttons
+      </div>
+      <div class="card-block">
+        <div class="btn-group btn-group-lg" role="group" aria-label="Button group with nested dropdown">
+    			  <button type="button" class="btn btn-secondary">1</button>
+    			  <button type="button" class="btn btn-secondary">2</button>
+
+    			  <div class="btn-group" role="group">
+    				<button id="btnGroupDrop1" type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				  Dropdown
+    				</button>
+    				<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+    				  <a class="dropdown-item" href="#">Dropdown link</a>
+    				  <a class="dropdown-item" href="#">Dropdown link</a>
+    				</div>
+    			  </div>
+    			</div>
+
+    		<br>
+    		<br>
+
+    			<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    			  <button type="button" class="btn btn-secondary">1</button>
+    			  <button type="button" class="btn btn-secondary">2</button>
+
+    			  <div class="btn-group" role="group">
+    				<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				  Dropdown
+    				</button>
+    				<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+    				  <a class="dropdown-item" href="#">Dropdown link</a>
+    				  <a class="dropdown-item" href="#">Dropdown link</a>
+    				</div>
+    			  </div>
+    			</div>
+
+    		<br>
+    		<br>
+
+    		<div>
+    			<button type="button" class="btn btn-primary">Primary</button>
+    			<button type="button" class="btn btn-secondary">Secondary</button>
+    			<button type="button" class="btn btn-link">Link</button>
+    		</div>
+    		<br>
+
+    		<div>
+    			<button type="button" class="btn btn-sm btn-primary">Primary</button>
+    			<button type="button" class="btn btn-sm btn-secondary">Secondary</button>
+    			<button type="button" class="btn btn-sm btn-link">Link</button>
+    		</div>
+    		<br>
+
+    		<div>
+    			<button type="button" class="btn btn-lg btn-primary">Primary</button>
+    			<button type="button" class="btn btn-lg btn-secondary">Secondary</button>
+    			<button type="button" class="btn btn-lg btn-link">Link</button>
+    		</div>
+    		<br>
+
+    		<div class="mb-3">
+    			<button type="button" class="btn btn-outline-primary">Primary</button>
+    			<button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+    		</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        Icons
+      </div>
+      <div class="card-block">
+        <span class="icon-repo-free"></span>
+    		<span class="icon-repo-master"></span>
+    		<span class="icon-repo-standart"></span>
+    		<span class="icon-repo-system"></span>
+    		<span class="icon-repo-worker"></span>
+    		<span class="icon-repo"></span>
+    		<span class="icon-copy"></span>
+    		<span class="icon-eye"></span>
+    		<span class="icon-connection-off"></span>
+    		<span class="icon-connection-on"></span>
+    		<span class="icon-key"></span>
+    		<span class="icon-comment"></span>
+    		<span class="icon-arrow-down"></span>
+    		<span class="icon-arrow-left"></span>
+    		<span class="icon-arrow-right"></span>
+    		<span class="icon-arrow-up"></span>
+    		<span class="icon-exchange"></span>
+    		<span class="icon-columns"></span>
+    		<span class="icon-inferred-off"></span>
+    		<span class="icon-inferred-on"></span>
+    		<span class="icon-save"></span>
+    		<span class="icon-tag"></span>
+    		<span class="icon-file"></span>
+    		<span class="icon-folder"></span>
+    		<span class="icon-heartbeat"></span>
+    		<span class="icon-pin"></span>
+    		<span class="icon-zoom-in"></span>
+    		<span class="icon-zoom-out"></span>
+    		<span class="icon-check"></span>
+    		<span class="icon-download"></span>
+    		<span class="icon-external"></span>
+    		<span class="icon-lock"></span>
+    		<span class="icon-search"></span>
+    		<span class="icon-upload"></span>
+    		<span class="icon-caret-left"></span>
+    		<span class="icon-caret-right"></span>
+    		<span class="icon-caret-up"></span>
+    		<span class="icon-minus"></span>
+    		<span class="icon-reload"></span>
+    		<span class="icon-trash"></span>
+    		<span class="icon-warning"></span>
+    		<span class="icon-caret-down"></span>
+    		<span class="icon-close"></span>
+    		<span class="icon-edit"></span>
+    		<span class="icon-info"></span>
+    		<span class="icon-link"></span>
+    		<span class="icon-more"></span>
+    		<span class="icon-plus"></span>
+    		<span class="icon-data"></span>
+    		<span class="icon-help"></span>
+    		<span class="icon-monitoring"></span>
+    		<span class="icon-settings"></span>
+    		<span class="icon-sparql"></span>
+    		<span class="icon-user"></span>
+    		<span class="icon-export"></span>
+    		<span class="icon-import"></span>
+    		<br><br>
+    		<span class="icon-repo-free icon-lg"></span>
+    		<span class="icon-repo-master icon-lg"></span>
+    		<span class="icon-repo-standart icon-lg"></span>
+    		<span class="icon-repo-system icon-lg"></span>
+    		<span class="icon-repo-worker icon-lg"></span>
+    		<span class="icon-repo icon-lg"></span>
+    		<span class="icon-copy icon-lg"></span>
+    		<span class="icon-eye icon-lg"></span>
+    		<span class="icon-connection-off icon-lg"></span>
+    		<span class="icon-connection-on icon-lg"></span>
+    		<span class="icon-key icon-lg"></span>
+    		<span class="icon-comment icon-lg"></span>
+    		<span class="icon-arrow-down icon-lg"></span>
+    		<span class="icon-arrow-left icon-lg"></span>
+    		<span class="icon-arrow-right icon-lg"></span>
+    		<span class="icon-arrow-up icon-lg"></span>
+    		<span class="icon-exchange icon-lg"></span>
+    		<span class="icon-columns icon-lg"></span>
+    		<span class="icon-inferred-off icon-lg"></span>
+    		<span class="icon-inferred-on icon-lg"></span>
+    		<span class="icon-save icon-lg"></span>
+    		<span class="icon-tag icon-lg"></span>
+    		<span class="icon-file icon-lg"></span>
+    		<span class="icon-folder icon-lg"></span>
+    		<span class="icon-heartbeat icon-lg"></span>
+    		<span class="icon-pin icon-lg"></span>
+    		<span class="icon-zoom-in icon-lg"></span>
+    		<span class="icon-zoom-out icon-lg"></span>
+    		<span class="icon-check icon-lg"></span>
+    		<span class="icon-download icon-lg"></span>
+    		<span class="icon-external icon-lg"></span>
+    		<span class="icon-lock icon-lg"></span>
+    		<span class="icon-search icon-lg"></span>
+    		<span class="icon-upload icon-lg"></span>
+    		<span class="icon-caret-left icon-lg"></span>
+    		<span class="icon-caret-right icon-lg"></span>
+    		<span class="icon-caret-up icon-lg"></span>
+    		<span class="icon-minus icon-lg"></span>
+    		<span class="icon-reload icon-lg"></span>
+    		<span class="icon-trash icon-lg"></span>
+    		<span class="icon-warning icon-lg"></span>
+    		<span class="icon-caret-down icon-lg"></span>
+    		<span class="icon-close icon-lg"></span>
+    		<span class="icon-edit icon-lg"></span>
+    		<span class="icon-info icon-lg"></span>
+    		<span class="icon-link icon-lg"></span>
+    		<span class="icon-more icon-lg"></span>
+    		<span class="icon-plus icon-lg"></span>
+    		<span class="icon-data icon-lg"></span>
+    		<span class="icon-help icon-lg"></span>
+    		<span class="icon-monitoring icon-lg"></span>
+    		<span class="icon-settings icon-lg"></span>
+    		<span class="icon-sparql icon-lg"></span>
+    		<span class="icon-user icon-lg"></span>
+    		<span class="icon-export icon-lg"></span>
+    		<span class="icon-import icon-lg"></span>
+    		<br><br>
+    		<span class="icon-repo-free icon-2x"></span>
+    		<span class="icon-repo-master icon-2x"></span>
+    		<span class="icon-repo-standart icon-2x"></span>
+    		<span class="icon-repo-system icon-2x"></span>
+    		<span class="icon-repo-worker icon-2x"></span>
+    		<span class="icon-repo icon-2x"></span>
+    		<span class="icon-copy icon-2x"></span>
+    		<span class="icon-eye icon-2x"></span>
+    		<span class="icon-connection-off icon-2x"></span>
+    		<span class="icon-connection-on icon-2x"></span>
+    		<span class="icon-key icon-2x"></span>
+    		<span class="icon-comment icon-2x"></span>
+    		<span class="icon-arrow-down icon-2x"></span>
+    		<span class="icon-arrow-left icon-2x"></span>
+    		<span class="icon-arrow-right icon-2x"></span>
+    		<span class="icon-arrow-up icon-2x"></span>
+    		<span class="icon-exchange icon-2x"></span>
+    		<span class="icon-columns icon-2x"></span>
+    		<span class="icon-inferred-off icon-2x"></span>
+    		<span class="icon-inferred-on icon-2x"></span>
+    		<span class="icon-save icon-2x"></span>
+    		<span class="icon-tag icon-2x"></span>
+    		<span class="icon-file icon-2x"></span>
+    		<span class="icon-folder icon-2x"></span>
+    		<span class="icon-heartbeat icon-2x"></span>
+    		<span class="icon-pin icon-2x"></span>
+    		<span class="icon-zoom-in icon-2x"></span>
+    		<span class="icon-zoom-out icon-2x"></span>
+    		<span class="icon-check icon-2x"></span>
+    		<span class="icon-download icon-2x"></span>
+    		<span class="icon-external icon-2x"></span>
+    		<span class="icon-lock icon-2x"></span>
+    		<span class="icon-search icon-2x"></span>
+    		<span class="icon-upload icon-2x"></span>
+    		<span class="icon-caret-left icon-2x"></span>
+    		<span class="icon-caret-right icon-2x"></span>
+    		<span class="icon-caret-up icon-2x"></span>
+    		<span class="icon-minus icon-2x"></span>
+    		<span class="icon-reload icon-2x"></span>
+    		<span class="icon-trash icon-2x"></span>
+    		<span class="icon-warning icon-2x"></span>
+    		<span class="icon-caret-down icon-2x"></span>
+    		<span class="icon-close icon-2x"></span>
+    		<span class="icon-edit icon-2x"></span>
+    		<span class="icon-info icon-2x"></span>
+    		<span class="icon-link icon-2x"></span>
+    		<span class="icon-more icon-2x"></span>
+    		<span class="icon-plus icon-2x"></span>
+    		<span class="icon-data icon-2x"></span>
+    		<span class="icon-help icon-2x"></span>
+    		<span class="icon-monitoring icon-2x"></span>
+    		<span class="icon-settings icon-2x"></span>
+    		<span class="icon-sparql icon-2x"></span>
+    		<span class="icon-user icon-2x"></span>
+    		<span class="icon-export icon-2x"></span>
+    		<span class="icon-import icon-2x"></span>
+      </div>
+    </div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+	<script src="bootstrap.min.js"></script>
+	</body>
 </html>

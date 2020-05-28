@@ -1,0 +1,466 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>GraphDB Dashboard example</title>
+
+		<link rel="stylesheet" href="../../ontotext-bootstrap-theme/bootstrap.min.css">
+		<link rel="stylesheet" href="../../ontotext-bootstrap-theme/bootstrap-graphdb-theme.css">
+	</head>
+	<body>
+
+		<ul class="nav main-menu">
+			<li class="brand">
+				<a href="">
+					<img class="hidden-lg-down" src="images/graphdb-logo.svg" alt="GraphDB logo" width="181" height="45">
+					<img class="hidden-xl-up" src="images/graphdb-logo-sq.svg" alt="GraphDB logo">
+					<span title="GraphDB Free">Free</span>
+				</a>
+			</li>
+			<li><a href=""><span class="icon-import"></span> <span class="menu-item">Import</span></a>
+				<ul>
+					<li class="active"><a href="">RDF import</a></li>
+					<li><a href="">CSV (OntoRefine)</a></li>
+				</ul>
+			</li>
+			<li><a href=""><span class="icon-data"></span> <span class="menu-item">Explore</span></a>
+				<ul>
+					<li><a href="">Class relationships</a></li>
+					<li><a href="">Class hierarchy</a></li>
+					<li><a href="">View resource</a></li>
+				</ul>
+			</li>
+			<li><a href=""><span class="icon-sparql"></span> <span class="menu-item">SPARQL</span></a></li>
+			<li><a href=""><span class="icon-export"></span> <span class="menu-item">Exports/Contexts</span></a></li>
+			<li><a href=""><span class="icon-monitoring"></span> <span class="menu-item">Monitoring</span></a>
+				<ul>
+					<li><a href="">Queries</a></li>
+					<li><a href="">Imports</a></li>
+					<li><a href="">Resource</a></li>
+				</ul>
+			</li>
+			<li><a href=""><span class="icon-settings"></span> <span class="menu-item">Settings</span></a>
+				<ul>
+					<li><a href="">Location &amp; repositories</a></li>
+					<li><a href="">Users &amp; access</a></li>
+					<li><a href="">Connector management</a></li>
+					<li><a href="">Autocomplete index</a></li>
+					<li><a href="">System info</a></li>
+					<li><a href="">Namespaces</a></li>
+				</ul>
+			</li>
+			<li><a href=""><span class="icon-help"></span> <span class="menu-item">Help</span></a>
+				<ul>
+					<li><a href="">REST API</a></li>
+					<li><a href="">Documentation</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<div class="container-fluid main-container">
+
+			<div class="status-bar">
+				<div class="btn-group btn-group-lg" role="group" aria-label="Button group with nested dropdown">
+					<button type="button" class="btn active btn-outline-secondary">
+						<span class="icon-reload text-primary loader"></span>
+						<b>2</b>/3 queries &middot; <b>1</b> import
+					</button>
+
+					<div class="btn-group" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="multiline-text">
+								News
+								<!-- <br><small title="/Users/ivangarbev/Library/Application Support/GraphDB">location: System</small> -->
+							</span>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">
+								<span class="multiline-text">
+									Wines <br>
+									<small>location: System</small>
+								</span>
+							</a>
+							<a class="dropdown-item" href="#">
+								<span class="multiline-text">
+									Publishing <br>
+									<small>location: System</small>
+								</span>
+							</a>
+							<a class="dropdown-item" href="#">
+								<span class="multiline-text">
+									NewRepo <br>
+									<small>location: System</small>
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="btn-group" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="icon-user text-primary"></span>
+							Admin
+						</button>
+						<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<a class="dropdown-item" href="#">Change password</a>
+							<a class="dropdown-item" href="#">Logout</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="card-block">
+							<button type="button" title="Close" class="close" aria-label="Close"></button>
+							<h1 class="card-title">Welcome to GraphDB Workbench</h1>
+							<p class="card-text lead">Ontotext GraphDB is a highly-efficient and robust graph database with RDF and SPARQL support. The workbench is used for searching, exploring and managing GraphDB semantic repositories. This quick tutorial will guide through the basics…</p>
+							<a href="#" class="btn btn-lg btn-primary">OK, continue</a>
+							<a href="#" class="btn btn-lg btn-outline-secondary">No, thanks</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-lg-12">
+					<h2>Repositories</h2>
+					<p>
+						<b>Current location:</b> System (/Users/ivangarbev/Library/Application Support/GraphDB/data)
+						<button type="button" class="btn btn-link">Switch location</button>
+						<button type="button" class="btn btn-link"><span class="icon-Plus"></span> Attach new</button>
+						<button type="button" class="btn btn-link"><span class="icon-help"></span></button>
+					</p>
+					<!-- <div class="alert alert-warning" role="alert">
+						You are not connected to any repository…
+					</div> -->
+
+					<div>
+						<div class="card inline active">
+							<div class="card-block">
+								<div class="actions-bar">
+									<button type="button" title="Copy repository URL to clipboard" class="btn btn-link"><span class="icon-link"></span></button>
+									<button type="button" title="Edit repository" class="btn btn-link"><span class="icon-edit"></span></button>
+								</div>
+								<h3 class="card-title">Publishing</h3>
+								<div>
+									<div class="d-inline-block mr-1 mb-1">
+										<span class="data-value big">405</span>
+										statements
+									</div>
+									<div class="d-inline-block">
+										<div>
+											<span class="data-value">232</span>
+											<span class="">explicit</span>
+										</div>
+
+										<div>
+											<span class="data-value">173</span>
+											<span class="">inferred</span>
+										</div>
+
+										<div>
+										<span class="data-value">1.75</span>
+										<span class="">expansion ratio</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<span class="switch">
+									<input type="checkbox" checked id="change-repository-News" name="change-repository-News" class="switch">
+									<label for="change-repository-News"></label>
+									<strong class="text-muted">Connected</strong>
+								</span>
+							</div>
+						</div>
+						<div class="card inline">
+							<div class="card-block">
+								<div class="actions-bar">
+									<button type="button" title="Copy repository URL to clipboard" class="btn btn-link"><span class="icon-link"></span></button>
+									<button type="button" title="Edit repository" class="btn btn-link"><span class="icon-edit"></span></button>
+								</div>
+								<h3 class="card-title">Healthcare</h3>
+								<div>
+									<div class="d-inline-block mr-1 mb-1">
+										<span class="data-value big">3051</span>
+										statements
+									</div>
+									<div class="d-inline-block">
+										<div>
+											<span class="data-value">2324</span>
+											<span class="">explicit</span>
+										</div>
+
+										<div>
+											<span class="data-value">1452</span>
+											<span class="">inferred</span>
+										</div>
+
+										<div>
+										<span class="data-value">1.75</span>
+										<span class="">expansion ratio</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<span class="switch">
+									<input type="checkbox" id="change-repository-News2" name="change-repository-News" class="switch">
+									<label for="change-repository-News2"></label>
+									<strong class="text-muted">Disconnected</strong>
+								</span>
+							</div>
+						</div>
+						<div class="card inline button mr-0">
+							<div class="card-block">
+								<a href="" class="btn btn-block btn-link"><span><span class="icon-Plus"></span> Create new repository</span></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-lg-6">
+					<h2>Saved SPARQL queries</h2>
+					<p>Quicky execute frequently used queries…..</p>
+					<div class="card">
+						<ul class="list-group limit-height" style="max-height: 220px;">
+							<a href="" class="list-group-item list-group-item-action">
+								<span class="help-label">Execute <span class="icon-caret-right"></span></span>
+								<span class="h5">Add statements</span>
+								<samp class="text-muted small">SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100 SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100</samp>
+							</a>
+							<a href="" class="list-group-item list-group-item-action">
+								<span class="help-label">Execute <span class="icon-caret-right"></span></span>
+								<span class="h5">Remove statements</span>
+								<samp class="text-muted small">SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100</samp>
+							</a>
+							<a href="" class="list-group-item list-group-item-action">
+								<span class="help-label">Execute <span class="icon-caret-right"></span></span>
+								<span class="h5">SPARQL Select template</span>
+								<samp class="text-muted small">SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100</samp>
+							</a>
+							<a href="" class="list-group-item list-group-item-action">
+								<span class="help-label">Execute <span class="icon-caret-right"></span></span>
+								<span class="h5">SPARQL Select template</span>
+								<samp class="text-muted small">SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100</samp>
+							</a>
+							<a href="" class="list-group-item list-group-item-action">
+								<span class="help-label">Execute <span class="icon-caret-right"></span></span>
+								<span class="h5">SPARQL Select template</span>
+								<samp class="text-muted small">SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100</samp>
+							</a>
+							<a href="" class="list-group-item list-group-item-action">
+								<span class="help-label">Execute <span class="icon-caret-right"></span></span>
+								<span class="h5">SPARQL Select template</span>
+								<samp class="text-muted small">SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100</samp>
+							</a>
+							<a href="" class="list-group-item list-group-item-action">
+								<span class="help-label">Execute <span class="icon-caret-right"></span></span>
+								<span class="h5">SPARQL Select template</span>
+								<samp class="text-muted small">SELECT ?s ?p ?o WHERE { ?s ?p ?o . } LIMIT 100</samp>
+							</a>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<h2>View resource</h2>
+					<p>Enter resource URI to view or edit all RDF data related to it</p>
+					<div class="card">
+						<div class="card-block">
+							<div class="input-group input-group-lg">
+								<input class="form-control" placeholder="Search RDF resources...">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button">Go</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-lg-6">
+					<h2>License</h2>
+
+
+					<div class="card">
+						<h4 class="card-header">GraphDB Enterprise Edition</h4>
+
+						<!-- appears only when there is a problem with the license -->
+						<!-- <div class="alert alert-warning" role="alert">
+							<p>
+								<strong>No license was set</strong><br>
+								Please supply a valid license or contact Ontotext AD sales department to aquire one.
+							</p>
+							<button class="btn btn-primary license-button">
+								Set new license
+							</button>
+						</div> -->
+
+
+						<div class="card-block">
+							<div class="">
+								<div class="d-inline-block mr-1 mb-1">
+									Licensed to
+									<span class="data-value big">Freeware</span>
+								</div>
+								<div class="d-inline-block mr-1 mb-1">
+									Valid until
+									<span class="data-value big">Perpetual</span>
+								</div>
+								<div class="d-inline-block mr-1 mb-1">
+									Number of cores
+									<span class="data-value big">Unlimited</span>
+								</div>
+							</div>
+
+							<div class="small text-muted">
+								<small>
+									The software is provided "AS IS", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
+									<!-- In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software. -->
+								</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<h2>Monitoring</h2>
+					<div class="card">
+						<div class="card-block">
+							<div class="d-inline-block">
+								<div class="progress-square">
+									<span class="progress-bar" style="height: 25%;"></span>
+								</div>
+							</div>
+							<div class="d-inline-block mr-1">
+								Heap memory
+								<span class="data-value big">0.681/4 GB</span>
+							</div>
+							<div class="d-inline-block mr-1">
+								Global cache
+								<span class="data-value big">2.3 GB</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- <div class="row mb-3">
+				<div class="col-lg-12">
+
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+					<p>Lorem ipsum dolor sit amet, velit pertinacia pri ne, viris noster duo no. Nec cu cibo nihil animal, erant qualisque mediocritatem vix cu. Accusamus persequeris eam an. Apeirian sententiae mediocritatem eam eu, est mazim consulatu te. Solet periculis accommodare usu id, cetero meliore docendi sed ne, qui ceteros incorrupte te.
+					</p>
+
+
+
+					<div class="btn-group btn-group-lg" role="group" aria-label="Button group with nested dropdown">
+						  <button type="button" class="btn btn-secondary">1</button>
+						  <button type="button" class="btn btn-secondary">2</button>
+
+						  <div class="btn-group" role="group">
+							<button id="btnGroupDrop1" type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  Dropdown
+							</button>
+							<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							  <a class="dropdown-item" href="#">Dropdown link</a>
+							  <a class="dropdown-item" href="#">Dropdown link</a>
+							</div>
+						  </div>
+						</div>
+
+					<br>
+					<br>
+
+						<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+						  <button type="button" class="btn btn-secondary">1</button>
+						  <button type="button" class="btn btn-secondary">2</button>
+
+						  <div class="btn-group" role="group">
+							<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  Dropdown
+							</button>
+							<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							  <a class="dropdown-item" href="#">Dropdown link</a>
+							  <a class="dropdown-item" href="#">Dropdown link</a>
+							</div>
+						  </div>
+						</div>
+
+					<br>
+					<br>
+
+					<div>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-link">Link</button>
+					</div>
+					<br>
+
+					<div>
+						<button type="button" class="btn btn-sm btn-primary">Primary</button>
+						<button type="button" class="btn btn-sm btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-sm btn-success">Success</button>
+						<button type="button" class="btn btn-sm btn-info">Info</button>
+						<button type="button" class="btn btn-sm btn-warning">Warning</button>
+						<button type="button" class="btn btn-sm btn-danger">Danger</button>
+						<button type="button" class="btn btn-sm btn-link">Link</button>
+					</div>
+					<br>
+
+					<div>
+						<button type="button" class="btn btn-lg btn-primary">Primary</button>
+						<button type="button" class="btn btn-lg btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-lg btn-success">Success</button>
+						<button type="button" class="btn btn-lg btn-info">Info</button>
+						<button type="button" class="btn btn-lg btn-warning">Warning</button>
+						<button type="button" class="btn btn-lg btn-danger">Danger</button>
+						<button type="button" class="btn btn-lg btn-link">Link</button>
+					</div>
+					<br>
+
+					<div>
+						<button type="button" class="btn btn-outline-primary">Primary</button>
+						<button type="button" class="btn btn-outline-secondary">Secondary</button>
+						<button type="button" class="btn active btn-outline-secondary">Secondary</button>
+						<button type="button" class="btn btn-outline-success">Success</button>
+						<button type="button" class="btn btn-outline-info">Info</button>
+						<button type="button" class="btn btn-outline-warning">Warning</button>
+						<button type="button" class="btn btn-outline-danger">Danger</button>
+					</div>
+
+				</div>
+			</div> -->
+
+		</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+
+
+<head>
+
+</head>
