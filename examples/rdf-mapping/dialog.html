@@ -19,55 +19,93 @@
 
 
 			<div class="row mb-3">
-				<div class="card" style="width: 720px">
+				<div class="card" style="width: 960px">
+					<h3 class="card-header">Subject mapping</h3>
 					<div class="card-block">
-						<h3>RDF value</h3>
+						<div class="form-group row">
+							<div class="col-3 col-form-label"><h4>Type</h4></div>
+							<div class="col-9">
+								<div class="input-group mb-3" role="group" aria-label="Basic example">
+								  <button type="button" class="btn btn-primary">DatatypeLiteral</button>
+								  <button type="button" class="btn btn-secondary">IRI</button>
+								  <button type="button" class="btn btn-secondary">LanguageLiteral</button>
+								  <button type="button" class="btn btn-secondary">Literal</button>
+								  <button type="button" class="btn btn-secondary">UniqueBnode</button>
+								  <button type="button" class="btn btn-secondary">ValueBnode</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label for="example-text-input" class="col-3 col-form-label"><strong>Type source</strong></label>
+							<div class="col-9">
+								<div class="input-group mb-3" role="group" aria-label="Basic example">
+								  <button type="button" class="btn btn-secondary">Column</button>
+								  <button type="button" class="btn btn-primary">Constant</button>
+								  <button type="button" class="btn btn-secondary">RecordID</button>
+								  <button type="button" class="btn btn-secondary">RowIndex</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label for="example-text-input" class="col-3 col-form-label"><strong>Constant</strong></label>
+							<div class="col-9">
+								<input class="form-control" placeholder="Constant">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label for="example-text-input" class="col-3 col-form-label"><strong>Type transformation</strong></label>
+							<div class="col-9">
+								<div class="input-group">
+									<button type="button" class="btn btn-secondary">Prefix</button>
+								  <button type="button" class="btn btn-primary">GREL</button>
+								  <input class="form-control ml-1" placeholder="Expression">
+								</div>
+							</div>
+						</div>
 
 
-						<ul class="nav nav-tabs mb-4" >
-							<li class="nav-item active">
-								<a class="nav-link">Type</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link">Source</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link">Transformation</a>
-							</li>
-						</ul>
 
-						<div>
-							<label class="mr-2">
-							  <input name="radio" type="radio" checked> DatatypeLiteral
-							</label>
-							<label  class="mr-2">
-							  <input name="radio" type="radio" > IRI
-							</label>
-							<label  class="mr-2">
-							  <input name="radio" type="radio" > LanguageLiteral
-							</label>
-							<label  class="mr-2">
-							  <input name="radio" type="radio" > Literal
-							</label>
-							<label  class="mr-2">
-							  <input name="radio" type="radio" > UniqueBnode
-							</label>
-							<label  class="mr-2">
-							  <input name="radio" type="radio" > ValueBnode
-							</label>
+					</div>
+
+					<div class="card-block divider-top">
+						<div class="form-group row">
+							<div class="col-3 col-form-label"><h4>Source</h4></div>
+							<div class="col-9">
+								<div class="input-group mb-3" role="group" aria-label="Basic example">
+									<button type="button" class="btn btn-primary">Column</button>
+									<button type="button" class="btn btn-secondary">Constant</button>
+									<button type="button" class="btn btn-secondary">RecordID</button>
+									<button type="button" class="btn btn-secondary">RowIndex</button>
+								</div>
+							</div>
 						</div>
-						<hr>
-						<div class="mb-3">
-							<label for="" c>Type source: </label>
-							<select class="custom-select ml-3">
-								<option value="1">Column</option>
-							  <option selected>Constant</option>
-							  <option value="2">RecordID</option>
-							  <option value="3">RowIndex</option>
-							</select>
+
+						<div class="form-group row">
+							<label for="example-text-input" class="col-3 col-form-label"><strong>Column</strong></label>
+							<div class="col-9">
+								<input class="form-control" placeholder="Column">
+							</div>
 						</div>
-							<input class="form-control d-inline" placeholder="Enter constant">
+
+					</div>
+
+					<div class="card-block divider-top">
+						<div class="form-group row">
+							<div class="col-3 col-form-label"><h4>Transformation</h4></div>
+							<div class="col-9">
+								<div class="input-group">
+									<button type="button" class="btn btn-secondary">Prefix</button>
+								  <button type="button" class="btn btn-primary">GREL</button>
+								  <input class="form-control ml-1" placeholder="Expression">
+									<span class="input-group-addon" id="basic-addon2"><span class="btn btn-link btn-sm" popover-template="'js/angular/templates/titlePopoverTemplate.html'" popover-trigger="mouseenter" popover-placement="bottom-right" popover-append-to-body="true"><span class="icon-info"></span></span></span>
+								</div>
+							</div>
 						</div>
+
+
 
 					</div>
 

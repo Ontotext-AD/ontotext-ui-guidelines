@@ -199,3 +199,8 @@
   right: auto;
   left: 16.66666666666%;
 }
+
+
+.divider-top {
+  border-top: 1px solid rgba(0,0,0,.125);
+}
