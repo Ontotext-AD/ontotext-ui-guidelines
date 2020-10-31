@@ -26,4 +26,10 @@
 
 10. Get the font files (icons.eot, icons.svg, icons.ttf, icons.woff) from the archive and replace them in the project
 
-11. Copy the CSS declaration for the new icon(s) into your CSS file (from **p.8**)
+11. Copy the CSS declaration for the new icon(s) into your CSS file (from **p.8**) (There is a FONTS section at the beginning of bootstrap-graphdb-theme.css)
+
+12. Add new changes back to this repository
+  1. Download the project json file from [Icomoon project page](https://icomoon.io/app/#/projects)
+  2. Add new SVG files the the SVG export folder
+
+*Icomoon only keeps changes in local storage for free accounts, so they will be lost otherwise*
