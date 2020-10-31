@@ -1,4 +1,4 @@
-# How to add new icons to iconfont
+# How to add new icons to the icons font
 
 1. Go to [Icomoon App](https://icomoon.io/app/)  
 
@@ -30,6 +30,7 @@
 
 12. Add new changes back to this repository
   1. Download the project json file from [Icomoon project page](https://icomoon.io/app/#/projects)
-  2. Add new SVG files the the SVG export folder
+  2. Add new SVG files the the svg export folder
+  3. Update **icomoon web font files** with the contents of the latest zip file from iconmoon
 
 *Icomoon only keeps changes in local storage for free accounts, so they will be lost otherwise*
