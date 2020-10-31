@@ -1,4 +1,4 @@
-#How to add new icons to iconfont
+# How to add new icons to iconfont
 
 1. Go to [Icomoon App](https://icomoon.io/app/)  
 
