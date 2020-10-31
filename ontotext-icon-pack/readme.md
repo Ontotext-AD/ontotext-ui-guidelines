@@ -28,7 +28,7 @@
 
 11. Copy the CSS declaration for the new icon(s) into your CSS file (from **p.8**) (There is a FONTS section at the beginning of bootstrap-graphdb-theme.css)
 
-12. Add new changes back to this repository
+12. Keep track of changes in this repository
   1. Download the project json file from [Icomoon project page](https://icomoon.io/app/#/projects)
   2. Add new SVG files the the svg export folder
   3. Update **icomoon web font files** with the contents of the latest zip file from iconmoon
