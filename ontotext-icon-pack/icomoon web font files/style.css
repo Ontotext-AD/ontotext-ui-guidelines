@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?aj7lxd');
-  src:  url('fonts/icons.eot?aj7lxd#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?aj7lxd') format('truetype'),
-    url('fonts/icons.woff?aj7lxd') format('woff'),
-    url('fonts/icons.svg?aj7lxd#icons') format('svg');
+  src:  url('fonts/icons.eot?fun4ky');
+  src:  url('fonts/icons.eot?fun4ky#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?fun4ky') format('truetype'),
+    url('fonts/icons.woff?fun4ky') format('woff'),
+    url('fonts/icons.svg?fun4ky#icons') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-repo-virtual:before {
+  content: "\e957";
+}
 .icon-exclamation:before {
   content: "\e955";
 }
