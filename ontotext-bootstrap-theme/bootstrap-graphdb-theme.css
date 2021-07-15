@@ -400,6 +400,10 @@
     content: "\e92f";
 }
 
+.icon-repo-FedX:before {
+  content: "\e959";
+}
+
 /*
 [class^="icon-"]:before, [class*=" icon-"]:before {
 	display: inline-block;
