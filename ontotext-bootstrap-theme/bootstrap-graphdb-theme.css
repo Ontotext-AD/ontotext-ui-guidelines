@@ -404,6 +404,10 @@
   content: "\e959";
 }
 
+.icon-G-FedX:before {
+    content: "\e95a";
+}
+
 /*
 [class^="icon-"]:before, [class*=" icon-"]:before {
 	display: inline-block;
