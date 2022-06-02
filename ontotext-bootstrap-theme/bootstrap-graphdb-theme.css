@@ -408,6 +408,37 @@
     content: "\e95a";
 }
 
+.icon-export1:before {
+    content: "\e95b";
+}
+
+.icon-readonly:before {
+    content: "\e95c";
+}
+
+.icon-repo-fedx1:before {
+    content: "\e95d";
+}
+
+.icon-repo-graphdb:before {
+    content: "\e95e";
+}
+
+.icon-repo-ontop1:before {
+    content: "\e95f";
+}
+
+.icon-repo-unknown:before {
+    content: "\e960";
+}
+
+.icon-translation:before {
+    content: "\e961";
+}
+
+.icon-user1:before {
+    content: "\e962";
+}
 /*
 [class^="icon-"]:before, [class*=" icon-"]:before {
 	display: inline-block;

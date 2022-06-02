@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?yb3hpp');
-  src:  url('fonts/icons.eot?yb3hpp#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?yb3hpp') format('truetype'),
-    url('fonts/icons.woff?yb3hpp') format('woff'),
-    url('fonts/icons.svg?yb3hpp#icons') format('svg');
+  src:  url('fonts/icons.eot?vhboyl');
+  src:  url('fonts/icons.eot?vhboyl#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?vhboyl') format('truetype'),
+    url('fonts/icons.woff?vhboyl') format('woff'),
+    url('fonts/icons.svg?vhboyl#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-G-FedX:before {
+.icon-export1:before {
+  content: "\e95b";
+}
+.icon-readonly:before {
+  content: "\e95c";
+}
+.icon-repo-fedx1:before {
+  content: "\e95d";
+}
+.icon-repo-graphdb:before {
+  content: "\e95e";
+}
+.icon-repo-ontop1:before {
+  content: "\e95f";
+}
+.icon-repo-unknown:before {
+  content: "\e960";
+}
+.icon-translation:before {
+  content: "\e961";
+}
+.icon-user1:before {
+  content: "\e962";
+}
+.icon-repo-gdb:before {
   content: "\e95a";
 }
 .icon-repo-FedX:before {
