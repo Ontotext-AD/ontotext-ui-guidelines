@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?vhboyl');
-  src:  url('fonts/icons.eot?vhboyl#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?vhboyl') format('truetype'),
-    url('fonts/icons.woff?vhboyl') format('woff'),
-    url('fonts/icons.svg?vhboyl#icons') format('svg');
+  src:  url('fonts/icons.eot?vt1ez7');
+  src:  url('fonts/icons.eot?vt1ez7#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?vt1ez7') format('truetype'),
+    url('fonts/icons.woff?vt1ez7') format('woff'),
+    url('fonts/icons.svg?vt1ez7#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,19 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-export1:before {
+.icon-export:before {
   content: "\e95b";
 }
 .icon-readonly:before {
   content: "\e95c";
 }
-.icon-repo-fedx1:before {
+.icon-repo-fedx:before {
   content: "\e95d";
 }
 .icon-repo-graphdb:before {
   content: "\e95e";
 }
-.icon-repo-ontop1:before {
+.icon-repo-ontop:before {
   content: "\e95f";
 }
 .icon-repo-unknown:before {
@@ -46,16 +46,16 @@
 .icon-translation:before {
   content: "\e961";
 }
-.icon-user1:before {
+.icon-user:before {
   content: "\e962";
 }
-.icon-repo-gdb:before {
+.icon-repo-graphdb-alt:before {
   content: "\e95a";
 }
-.icon-repo-FedX:before {
+.icon-repo-fedx-alt:before {
   content: "\e959";
 }
-.icon-repo-ontop:before {
+.icon-repo-ontop-alt:before {
   content: "\e958";
 }
 .icon-repo-virtual:before {
@@ -226,10 +226,10 @@
 .icon-sparql:before {
   content: "\e92c";
 }
-.icon-user:before {
+.icon-user-alt:before {
   content: "\e92d";
 }
-.icon-export:before {
+.icon-export-alt:before {
   content: "\e92e";
 }
 .icon-import:before {

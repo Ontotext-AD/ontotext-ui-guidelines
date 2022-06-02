@@ -388,11 +388,11 @@
     content: "\e92c";
 }
 
-.icon-user:before {
+.icon-user-alt:before {
     content: "\e92d";
 }
 
-.icon-export:before {
+.icon-export-alt:before {
     content: "\e92e";
 }
 
@@ -400,15 +400,19 @@
     content: "\e92f";
 }
 
-.icon-repo-FedX:before {
-  content: "\e959";
+.icon-repo-ontop-alt:before {
+    content: "\e958";
 }
 
-.icon-repo-gdb:before {
+.icon-repo-fedx-alt:before {
+    content: "\e959";
+}
+
+.icon-repo-graphdb-alt:before {
     content: "\e95a";
 }
 
-.icon-export1:before {
+.icon-export:before {
     content: "\e95b";
 }
 
@@ -416,7 +420,7 @@
     content: "\e95c";
 }
 
-.icon-repo-fedx1:before {
+.icon-repo-fedx:before {
     content: "\e95d";
 }
 
@@ -424,7 +428,7 @@
     content: "\e95e";
 }
 
-.icon-repo-ontop1:before {
+.icon-repo-ontop:before {
     content: "\e95f";
 }
 
@@ -436,7 +440,7 @@
     content: "\e961";
 }
 
-.icon-user1:before {
+.icon-user:before {
     content: "\e962";
 }
 /*

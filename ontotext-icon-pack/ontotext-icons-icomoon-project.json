@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Ontotext Icon Pack",
     "lastOpened": 0,
-    "created": 1654158256305
+    "created": 1654165651642
   },
   "iconSets": [
     {
@@ -10,7 +10,7 @@
         {
           "order": 98,
           "id": 13,
-          "name": "export1",
+          "name": "export",
           "prevSize": 32,
           "code": 59739,
           "tempChar": ""
@@ -26,13 +26,13 @@
         {
           "order": 100,
           "id": 11,
-          "name": "repo-fedx1",
+          "name": "repo-fedx",
           "prevSize": 32,
           "code": 59741,
           "tempChar": ""
         },
         {
-          "order": 101,
+          "order": 112,
           "id": 10,
           "name": "repo-graphdb",
           "prevSize": 32,
@@ -42,7 +42,7 @@
         {
           "order": 102,
           "id": 9,
-          "name": "repo-ontop1",
+          "name": "repo-ontop",
           "prevSize": 32,
           "code": 59743,
           "tempChar": ""
@@ -66,7 +66,7 @@
         {
           "order": 105,
           "id": 6,
-          "name": "user1",
+          "name": "user",
           "prevSize": 32,
           "code": 59746,
           "tempChar": ""
@@ -74,7 +74,7 @@
         {
           "order": 96,
           "id": 5,
-          "name": "repo-gdb",
+          "name": "repo-graphdb-alt",
           "prevSize": 32,
           "code": 59738,
           "tempChar": ""
@@ -98,7 +98,7 @@
         {
           "order": 93,
           "id": 2,
-          "name": "repo-FedX",
+          "name": "repo-fedx-alt",
           "prevSize": 32,
           "code": 59737,
           "tempChar": ""
@@ -106,7 +106,7 @@
         {
           "order": 106,
           "id": 1,
-          "name": "repo-ontop",
+          "name": "repo-ontop-alt",
           "prevSize": 32,
           "code": 59736,
           "tempChar": ""
@@ -293,7 +293,7 @@
           "isMulticolor2": false,
           "grid": 0,
           "tags": [
-            "repo-gdb"
+            "repo-graphdb"
           ]
         },
         {
@@ -344,7 +344,7 @@
           "isMulticolor2": false,
           "grid": 0,
           "tags": [
-            "repo-FedX"
+            "repo-fedx"
           ]
         },
         {
@@ -1032,16 +1032,16 @@
           "ligatures": "",
           "prevSize": 32,
           "code": 59693,
-          "name": "user",
+          "name": "user-alt",
           "tempChar": ""
         },
         {
           "id": 47,
-          "order": 51,
+          "order": 111,
           "ligatures": "",
           "prevSize": 32,
           "code": 59694,
-          "name": "export",
+          "name": "export-alt",
           "tempChar": ""
         },
         {
@@ -12888,9 +12888,9 @@
     }
   ],
   "preferences": {
-    "showGlyphs": true,
+    "showGlyphs": false,
     "showQuickUse": true,
-    "showQuickUse2": true,
+    "showQuickUse2": false,
     "showSVGs": true,
     "fontPref": {
       "prefix": "icon-",
@@ -12907,11 +12907,12 @@
       "embed": false,
       "showSelector": false,
       "showMetrics": false,
-      "showMetadata": false
+      "showMetadata": false,
+      "hideFormats": false
     },
     "imagePref": {
       "prefix": "icon-",
-      "png": true,
+      "png": false,
       "useClassSelector": true,
       "color": 0,
       "bgColor": 16777215,
