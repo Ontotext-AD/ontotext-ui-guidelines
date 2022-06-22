@@ -400,6 +400,10 @@
     content: "\e92f";
 }
 
+.icon-tick:before {
+    content: "\e956";
+}
+
 .icon-repo-ontop-alt:before {
     content: "\e958";
 }
@@ -442,6 +446,10 @@
 
 .icon-user:before {
     content: "\e962";
+}
+
+.icon-follower:before {
+    content: "\e963";
 }
 /*
 [class^="icon-"]:before, [class*=" icon-"]:before {
