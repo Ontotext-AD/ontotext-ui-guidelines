@@ -1,3 +1,7 @@
+# Ontotext Icons Font
+
+This icon font contains legacy Ontotext icons. It is kept for backward compatibility only. New development should use the Graphwise icon font instead.
+
 # How to add new icons to the icons font
 
 1. Go to [Icomoon App](https://icomoon.io/app/)  
