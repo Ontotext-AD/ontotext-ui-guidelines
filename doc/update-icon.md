@@ -1,4 +1,4 @@
-1. Go to the [IcoMoon App](https://icomoon.io/![img.png](img.png)app/).
+1. Go to the [IcoMoon App](https://icomoon.io/app/).
 2. Choose **Manage Projects** from the far right side of the header  
    (or use [this direct link](https://icomoon.io/app/#/projects)).
 3. Import the project file. Chouse the file "graphwise-icons-icomoon-project.json" or "ontotext-icons-icomoon-project.json".
