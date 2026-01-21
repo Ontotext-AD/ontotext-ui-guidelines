@@ -38,3 +38,6 @@ This icon font contains legacy Ontotext icons. It is kept for backward compatibi
   3. Update **icomoon web font files** with the contents of the latest zip file from iconmoon
 
 *Icomoon only keeps changes in local storage for free accounts, so they will be lost otherwise*
+
+# How to replace an icon to the icons font
+[Update icon procedure](../doc/update-icon.md)

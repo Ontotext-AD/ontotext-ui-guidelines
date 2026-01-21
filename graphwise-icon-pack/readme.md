@@ -46,3 +46,6 @@ The purpose of this font is to keep all custom icons in one place and aligned wi
     - 3 Update **icons-demo files** with the contents of the latest zip file from iconmoon
 
 *Icomoon only keeps changes in local storage for free accounts, so they will be lost otherwise*
+
+# How to replace an icon to the icons font
+[Update icon procedure](../doc/update-icon.md)
